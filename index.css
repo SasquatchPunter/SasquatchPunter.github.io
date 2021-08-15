@@ -1,5 +1,11 @@
-@import "normalize-css";
-
 * {
   outline: solid 1px red;
+}
+
+.header {
+  background: gray;
+}
+
+.header__div {
+  background: lightgray;
 }
