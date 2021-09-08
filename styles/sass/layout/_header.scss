@@ -1,0 +1,24 @@
+.header {
+  align-items: flex-end;
+  background: linear-gradient(
+    to left,
+    rgba($bg-base-dark, 0.5),
+    rgba($bg-secondary-dark, 0.98) 80%,
+    rgba($bg-secondary-dark, 1)
+  );
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.welcome-div {
+  margin: auto 10%;
+  width: auto;
+  color: $txt-color__white;
+  transition: all 1s ease-in-out;
+}
+
+.welcome-item {
+  box-sizing: border-box;
+  padding: 1em;
+}

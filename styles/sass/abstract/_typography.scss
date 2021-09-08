@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nixie+One&display=swap");
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+/* Font Families */
+.ff__ps2p {
+  font-family: "Press Start 2P", cursive;
+}
+.ff__pto {
+  font-family: "Paytone One", sans-serif;
+}
+.ff__raleway {
+  font-family: "Raleway", sans-serif;
+}
+.ff__pm {
+  font-family: "Permanent Marker", cursive;
+}
+.ff__no {
+  font-family: "Nixie One", cursive;
+}
+
+/* Text Colors*/
+.c-red {
+  color: $txt-color__red;
+}
+.c-white {
+  color: $txt-color__white;
+}
+
+/* Weights */
+.fw100 {
+  font-weight: 100;
+}
+.fw200 {
+  font-weight: 200;
+}
+.fw300 {
+  font-weight: 300;
+}
+.fw400 {
+  font-weight: 400;
+}
+.fw500 {
+  font-weight: 500;
+}
+.fw600 {
+  font-weight: 600;
+}
+.fw700 {
+  font-weight: 700;
+}
+.fw800 {
+  font-weight: 800;
+}
+.fw900 {
+  font-weight: 900;
+}
+
+.fs--s {
+  font-size: $fs__s;
+}
+.fs--m {
+  font-size: $fs__m;
+}
+.fs--l {
+  font-size: $fs__l;
+}
+.fs--xl {
+  font-size: $fs__xl;
+}
+
+/* Text Shadow */
+.txt-shadow__light {
+  text-shadow: 0 0 0.25em white;
+}
+.txt-shadow__dark {
+  text-shadow: 0.25em 0.25em black;
+}
+
+/* Specialized Styling */
+.highlighted--red {
+  color: $txt-color__red;
+  font-weight: 900;
+  font-size: 115%;
+}
+
+/* Lettering.JS */
+
+.lettering {
+  &--letters {
+    & span[class^="char"] {
+      position: relative;
+      transition: all 250ms ease-in-out;
+      &:hover {
+        color: blue;
+      }
+    }
+  }
+  &--words {
+    & span[class^="word"] {
+      transition: all 250ms ease-in-out;
+      &:hover {
+        color: blue;
+      }
+    }
+  }
+  &--lines {
+    & span[class^="line"] {
+      transition: all 250ms ease-in-out;
+      &:hover {
+        color: blue;
+      }
+    }
+  }
+}

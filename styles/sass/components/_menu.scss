@@ -1,0 +1,28 @@
+.btn-menu {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3rem;
+  position: absolute;
+  background: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  & > button {
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+  }
+}
+
+#logo-btn {
+  margin-right: auto;
+}
+
+#contact-btn {
+  background: $txt-color__red;
+  border-radius: 0.25em;
+  &:hover {
+    background: linear-gradient(orange, red);
+  }
+}

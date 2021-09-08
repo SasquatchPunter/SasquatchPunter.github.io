@@ -1,0 +1,17 @@
+.faded-in {
+  opacity: 1 !important;
+}
+.faded-out {
+  opacity: 0 !important;
+}
+
+/* Sliding Rules */
+.slide__start-from-right {
+  transform: translate(1em, 0);
+}
+.slide__start-from-left {
+  transform: translate(-1em, 0);
+}
+.slide__end {
+  transform: translate(0, 0);
+}

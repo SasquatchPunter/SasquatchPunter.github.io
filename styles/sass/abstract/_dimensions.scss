@@ -1,0 +1,72 @@
+/* Heights */
+.h25 {
+  height: 25%;
+}
+.h50 {
+  height: 50%;
+}
+.h75 {
+  height: 75%;
+}
+.h100 {
+  height: 100%;
+}
+
+.vh25 {
+  height: 25vh;
+}
+.vh50 {
+  height: 50vh;
+}
+.vh75 {
+  height: 75vh;
+}
+.vh100 {
+  height: 100vh;
+}
+
+/* Widths */
+.w25 {
+  width: 25%;
+}
+.w50 {
+  width: 50%;
+}
+.w75 {
+  width: 75%;
+}
+.w100 {
+  width: 100%;
+}
+
+.vw25 {
+  width: 25vw;
+}
+.vw50 {
+  width: 50vw;
+}
+.vw75 {
+  width: 75vw;
+}
+.vw100 {
+  width: 100vw;
+}
+
+/* Max Dims */
+.max-width--100vw {
+  max-width: 100vw;
+}
+
+/* Spacing */
+.vmargin--s {
+  margin: $fs__s 0;
+}
+.vmargin--m {
+  margin: $fs__m 0;
+}
+.vmargin--l {
+  margin: $fs__l 0;
+}
+.vmargin--xl {
+  margin: $fs__xl 0;
+}

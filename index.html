@@ -4,21 +4,37 @@
     <head>
         <title>Hello!</title>
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css" type="text/css" />
-        <link rel="stylesheet" href="index.css" type="text/css" />
+        <link rel="stylesheet" href="styles/css/style.css" type="text/css" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="scripts/lettering.js"></script>
+        <script>
+            // Starts header transitions on load
+            window.onload = function() {
+                const div = document.querySelector(".welcome-div");
+                div.classList.replace("faded-out", "faded-in");
+                div.classList.replace("slide__start-from-right", "slide__end");
+            };
+        </script>
     </head>
 
     <body>
-        <div class="header">
-            <div class="welcome__div h100">
-                <div class="outlined welcome__item h25 ff__ps2p">
-                    <h2>Hello!</h2>
-                </div>
-                <div class="outlined welcome__item h75">
-                    <p>
-                        I'm Jeremy Elliott, a web developer specializing in responsive web design with React.
-                    </p>
-                </div>
+        <div class="btn-menu">
+            <button id="logo-btn">Home</button>
+            <button>About</button>
+            <button>Projects</button>
+            <button>Blog</button>
+            <button id="contact-btn">Contact</button>
+        </div>
+        <div class="header ff__raleway">
+            <div class="welcome-div faded-out slide__start-from-right">
+                <h1 class="fw300 fs--xl">Jeremy Elliott</h1>
+                <h1 class="fw900">WEL<span class="highlighted--red">COME</span>,</h1>
+                <h2 class="fw300 lettering--words">I'm <span class="highlighted--red">Jeremy Elliott</span> and I believe in the power of web-based services to make our lives richer.</h2>
+                <h2 class="fw300 vmargin--s lettering--letters">Let's create something together!</h2>
             </div>
         </div>
+       <div class="hero-section">
+
+       </div>
     </body>
 </html>

@@ -1,0 +1,13 @@
+button {
+  background: none;
+  color: $txt-color__white;
+  border: none;
+  text-align: center;
+  padding: 0.5em;
+  font-weight: 400;
+}
+
+button:hover {
+  color: white;
+  font-weight: 900;
+}
