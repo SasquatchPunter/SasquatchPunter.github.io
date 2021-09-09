@@ -1,0 +1,36 @@
+#cursor {
+  z-index: 1;
+  pointer-events: none;
+  position: absolute;
+  &-icon {
+    position: relative;
+    left: -$cursor-radius;
+    top: -$cursor-radius;
+    width: calc(#{$cursor-radius} * 2);
+    height: calc(#{$cursor-radius} * 2);
+    background-image: radial-gradient(#dddddd55, transparent 50%);
+    border-radius: 50%;
+    &--hovering {
+      position: relative;
+      left: -$cursor-radius;
+      top: -$cursor-radius;
+      width: calc(#{$cursor-radius} * 2);
+      height: calc(#{$cursor-radius} * 2);
+      background-image: radial-gradient(cyan, transparent 50%);
+      border-radius: 50%;
+      animation: pulse 500ms infinite;
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

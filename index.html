@@ -7,17 +7,14 @@
         <link rel="stylesheet" href="styles/css/style.css" type="text/css" />
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="scripts/lettering.js"></script>
-        <script>
-            // Starts header transitions on load
-            window.onload = function() {
-                const div = document.querySelector(".welcome-div");
-                div.classList.replace("faded-out", "faded-in");
-                div.classList.replace("slide__start-from-right", "slide__end");
-            };
-        </script>
+        <script src="scripts/transitions.js"></script>
+        <script src="scripts/setup-cursor.js" defer></script>
     </head>
 
     <body>
+        <div id="cursor">
+            <div id="cursor-icon"></div>
+        </div>
         <div class="btn-menu">
             <button id="logo-btn">Home</button>
             <button>About</button>
